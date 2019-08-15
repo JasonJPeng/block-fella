@@ -1,54 +1,21 @@
-import React, {Component} from 'react';
-import './App.css';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import {Motion, spring} from 'react-motion';
-import NavigationPanel from './components/NavigationPanel';
-import Modal from './components/Modal';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 class App extends Component {
-
-	constructor(props) {
-		super(props);
-		this.state = {
-			mounted: false
-		};
-	}
-
-	componentDidMount() {
-		this.setState({ mounted: true });
-	}
-	
-	handleSubmit = (e) => {
-		this.setState({ mounted: false });
-		e.preventDefault();
-	}
-
-	render() {
-		const {mounted} = this.state;
-
-		let child;
-		let test = 12;
-
-		if(mounted) {
-			child = (
-				<div className="App_test">
-					<NavigationPanel></NavigationPanel>
-					<Modal onSubmit={this.handleSubmit}/>
-				</div>
-			);
-		}
-		
-		return(
-			<div className="App">
-				<ReactCSSTransitionGroup 
-					transitionName="example"
-					transitionEnterTimeout={500}
-					transitionLeaveTimeout={300}>
-						{child}
-				</ReactCSSTransitionGroup>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div className="App">
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>Welcome to React</h2>
+        </div>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+      </div>
+    );
+  }
 }
 
 export default App;
