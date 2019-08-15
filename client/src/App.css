@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-html{
+
+html {
   font-family: "Roboto Condensed", sans-serif;
 }
 body {
@@ -12,8 +13,9 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
 .App {
-  text-align: center;
+  align-items: center;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -28,7 +30,7 @@ body {
   box-shadow: 0 6px 10px 0px rgba(0, 0, 0, 0.5);
   justify-content: flex-start;
 }
-.model {
+.Modal {
   width: 700px;
   height: 500px;
   display: flex;
@@ -36,7 +38,7 @@ body {
   box-shadow: 0 6px 10px 0px rgba(0, 0, 0, 0.5);
   flex-grow: 5;
 }
-.navigationPanel {
+.NavigationPanel {
   background-color: rgba(244, 246, 248, 0.98);
   width: 80px;
   color: rgb(64, 70, 86);
@@ -48,10 +50,10 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
-.back{
-  flex:2;
+.back {
+  flex: 2;
 }
-.dots{
+.dots {
   display: flex;
   flex: 5;
   flex-direction: column;
@@ -59,7 +61,7 @@ body {
   justify-content: center;
   height: 100%;
 }
-.dot{
+.dot {
   font-size: 5px;
   color: rgba(64, 70, 86, 0.5);
   padding-top: 15px;
@@ -315,24 +317,4 @@ button:active {
   margin-top: -30px;
   opacity: .01;
   transition: opacity .3s ease, margin .5s ease;
-}
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }

@@ -3,10 +3,10 @@ import '../App.css';
 import {MdArrowBack} from 'react-icons/lib/md';
 import {FaCircle} from 'react-icons/lib/fa';
 
-const navigationPanel = (props) => {
+const NavigationPanel = (props) => {
 
 	return (
-		<div className='navigationPanel'>
+		<div className='NavigationPanel'>
 			<MdArrowBack onClick={props.initialState} className='back'/>
 			<div className='dots'>
 				<FaCircle className='dotSelected' />
@@ -20,4 +20,4 @@ const navigationPanel = (props) => {
 
 
 
-export default navigationPanel;
+export default NavigationPanel;

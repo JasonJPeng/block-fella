@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import '../App.css';
 import {MdAccountCircle, MdAddCircle} from 'react-icons/lib/md';
 
-const signCollapsed = (props) => {
+const SignCollapsed = (props) => {
 
 	let icon = null;
 	
@@ -20,10 +20,10 @@ const signCollapsed = (props) => {
 	);
 }
 
-signCollapsed.propTypes = {
+SignCollapsed.propTypes = {
 	type: PropTypes.string,
 	onChange: PropTypes.func
 };
 
 
-export default signCollapsed;
+export default SignCollapsed;

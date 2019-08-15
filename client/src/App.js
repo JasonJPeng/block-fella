@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import './App.css';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {Motion, spring} from 'react-motion';
-import navigationPanel from './components/NavigationPanel';
-import model from './components/model';
+import NavigationPanel from './components/NavigationPanel';
+import Modal from './components/Modal';
 
 class App extends Component {
 
@@ -32,8 +32,8 @@ class App extends Component {
 		if(mounted) {
 			child = (
 				<div className="App_test">
-					<navigationPanel></navigationPanel>
-					<model onSubmit={this.handleSubmit}/>
+					<NavigationPanel></NavigationPanel>
+					<Modal onSubmit={this.handleSubmit}/>
 				</div>
 			);
 		}
@@ -52,4 +52,3 @@ class App extends Component {
 }
 
 export default App;
-
